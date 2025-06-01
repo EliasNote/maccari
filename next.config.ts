@@ -7,7 +7,7 @@ const withBundleAnalyzer = nextBundleAnalyzer({
 
 const nextConfig: NextConfig = {
 	reactStrictMode: true,
-	output: "export",
+
 	async rewrites() {
 		return [
 			{

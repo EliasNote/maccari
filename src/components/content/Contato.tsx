@@ -83,7 +83,7 @@ const Contato = () => {
 		setIsLoading(true);
 
 		try {
-			const response = await fetch("/.netlify/functions/Form", {
+			const response = await fetch("/api/form", {
 				method: "POST",
 				headers: {
 					"Content-Type": "application/json",
