@@ -82,7 +82,7 @@ const Footer = () => {
 					&copy; {currentYear} Maccari - Engenharia e Arquitetura. Todos os
 					direitos reservados.
 				</p>
-				<p>Desenvolvido por Elias Mathias Sand</p>
+				<p>Desenvolvido por Elias Mathias Sand teste</p>
 			</div>
 		</footer>
 	);
