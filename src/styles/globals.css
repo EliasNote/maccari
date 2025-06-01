@@ -38,6 +38,10 @@
 	--light-gray: #e5e7eb;
 }
 
+html {
+	scrollbar-gutter: stable;
+}
+
 body {
 	font-family: var(--font-karla), sans-serif;
 	margin: 0;

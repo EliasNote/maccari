@@ -34,3 +34,9 @@
 	text-decoration: none;
 	color: inherit;
 }
+
+@media (max-width: 1024px) {
+	.topbar {
+		display: none;
+	}
+}
