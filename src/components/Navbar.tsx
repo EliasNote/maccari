@@ -111,7 +111,7 @@ const Navbar = () => {
 					<div className={styles.logo_container}>
 						<Image
 							className={styles.logo}
-							src="/logo.png"
+							src="/logo.webp"
 							width={200}
 							height={200}
 							priority
@@ -188,7 +188,7 @@ const Navbar = () => {
 							<div className={styles.side_logo_container}>
 								<Image
 									className={styles.logo}
-									src="/logo.png"
+									src="/logo.webp"
 									width={200}
 									height={200}
 									priority

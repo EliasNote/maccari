@@ -4,17 +4,17 @@ import Image from "next/image";
 const itens = [
 	{
 		title: "Qualidade",
-		icon: "/icons/diferenciais/quality.png",
+		icon: "/icons/diferenciais/quality.webp",
 		description: `Trabalhamos com rigor técnico e atenção aos detalhes em cada etapa do projeto. Utilizamos métodos atualizados e respeitamos todas as normas para garantir segurança, funcionalidade e durabilidade. A qualidade está presente desde o planejamento até a entrega final.`,
 	},
 	{
 		title: "Custo Acessível",
-		icon: "/icons/diferenciais/low-price.png",
+		icon: "/icons/diferenciais/low-price.webp",
 		description: `Acreditamos que soluções bem planejadas não precisam custar caro. Por isso, buscamos sempre o melhor custo-benefício, otimizando materiais, processos e prazos. Nosso compromisso é entregar excelência com responsabilidade financeira.`,
 	},
 	{
 		title: "Confiança",
-		icon: "/icons/diferenciais/confiance.png",
+		icon: "/icons/diferenciais/confiance.webp",
 		description:
 			"Mais do que clientes, construímos relações de parceria. Atuamos com transparência, ética e comprometimento, oferecendo suporte técnico, clareza nas informações e segurança em todas as decisões. Confiança é a base do nosso trabalho.",
 	},
