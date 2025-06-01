@@ -8,8 +8,10 @@ export default function Home() {
 	const siteUrl = "https://www.seudominio.com.br";
 
 	const Hero = dynamic(() => import("../components/Hero"));
-	const Content = dynamic(() => import("../components/content/Content"));
-	const Footer = dynamic(() => import("../components/Footer"));
+	const Content = dynamic(() => import("../components/content/Content"), {
+		ssr: false,
+	});
+	const Footer = dynamic(() => import("../components/Footer"), { ssr: false });
 
 	return (
 		<>
