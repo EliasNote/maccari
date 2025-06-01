@@ -4,7 +4,6 @@ export default function Document() {
 	return (
 		<Html lang="ptbr">
 			<Head>
-				<link rel="preload" href="/background.webp" as="image" />
 				<link
 					rel="preload"
 					href="/fonts/bank%20gothic%20medium%20bt.ttf"
@@ -18,6 +17,12 @@ export default function Document() {
 					as="font"
 					type="font/otf"
 					crossOrigin="anonymous"
+				/>
+				<link
+					rel="preload"
+					href="/background.webp"
+					as="image"
+					fetchPriority="high"
 				/>
 			</Head>
 			<body>

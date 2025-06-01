@@ -7,11 +7,9 @@ export default function Home() {
 		"Especialistas em projetos arquitetônicos, estruturais, elétricos, hidrossanitários, prevenção contra incêndios e consultorias técnicas. Transformamos suas ideias em realidade.";
 	const siteUrl = "https://www.seudominio.com.br";
 
-	const Hero = dynamic(() => import("../components/Hero"), { ssr: false });
-	const Content = dynamic(() => import("../components/content/Content"), {
-		ssr: false,
-	});
-	const Footer = dynamic(() => import("../components/Footer"), { ssr: false });
+	const Hero = dynamic(() => import("../components/Hero"));
+	const Content = dynamic(() => import("../components/content/Content"));
+	const Footer = dynamic(() => import("../components/Footer"));
 
 	return (
 		<>
