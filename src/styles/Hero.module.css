@@ -23,6 +23,7 @@
 @media (max-width: 1024px) {
 	.container {
 		margin-top: 70px;
+		background-image: url("/background-medium.webp");
 	}
 
 	.content h1 {
@@ -33,6 +34,9 @@
 @media (max-width: 630px) {
 	.content h1 {
 		font-size: 32px;
+	}
+	.container {
+		background-image: url("/background-small.webp");
 	}
 }
 
