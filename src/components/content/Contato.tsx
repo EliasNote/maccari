@@ -214,7 +214,7 @@ const Contato = () => {
 									onChange={handleChange}
 									placeholder="(00) 00000-0000"
 									required
-									pattern="^\\(?\\d{2}\\)?[\\s-]?\\d{4,5}-?\\d{4}$"
+									pattern="^[0-9]{2}[ -]?[0-9]{4,5}-[0-9]{4}$"
 									maxLength={15}
 									onInvalid={(e) => {
 										const inputElement = e.target as HTMLInputElement;
@@ -237,10 +237,10 @@ const Contato = () => {
 							</div>
 						</div>
 						<div className={styles.formGroup}>
-							<label htmlFor="email">E-mail *</label>
+							<label htmlFor="emailInput">E-mail *</label>
 							<input
 								type="email"
-								id="email"
+								id="emailInput"
 								name="email"
 								value={formData.email}
 								onChange={handleChange}
