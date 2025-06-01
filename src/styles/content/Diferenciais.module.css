@@ -1,0 +1,36 @@
+.section {
+	padding: 60px 20px;
+	background: var(--white);
+	text-align: center;
+	font-family: var(--font-bank-medium-bt), sans-serif;
+}
+
+.grid {
+	display: grid;
+	gap: 1.5rem;
+	grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+	max-width: 1080px;
+	margin: 0 auto;
+}
+
+.card {
+	padding: 1rem;
+	transition: box-shadow 0.2s ease;
+	font-family: var(--font-bank-medium-bt), sans-serif;
+}
+
+.card h3 {
+	font-size: 20px;
+}
+
+.text {
+	font-size: 14px;
+	color: var(--cinza-claro);
+	text-align: justify;
+	word-break: break-word;
+}
+
+.icon {
+	width: 60px;
+	height: 60px;
+}

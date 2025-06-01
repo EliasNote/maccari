@@ -1,0 +1,36 @@
+.topbar,
+.container,
+.item {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+
+.topbar,
+.item {
+	background: var(--white);
+}
+
+.topbar {
+	height: 30px;
+	justify-content: flex-end;
+	padding: 0 10vw;
+}
+
+.container {
+	height: 100%;
+	gap: 1px;
+	background: var(--black);
+	border-inline: 1px solid var(--black);
+	font-family: var(--font-bank-medium-bt), sans-serif;
+	font-size: 13px;
+}
+
+.item {
+	height: 100%;
+	justify-content: center;
+	padding: 0 10px;
+	gap: 10px;
+	text-decoration: none;
+	color: inherit;
+}

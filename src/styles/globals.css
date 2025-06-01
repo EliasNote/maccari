@@ -1,42 +1,66 @@
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+	--red: #991b1e;
+	--blue: #22346e;
+	--black: black;
+	--cinza-escuro: #333;
+	--cinza-claro: #555;
+	--white: white;
+
+	--shadow-hover: rgba(0, 0, 0, 0.15);
+	--shadow: rgba(188, 25, 28, 0.1);
+	--shadow-light: rgba(0, 0, 0, 0.01);
+
+	--shadow-red: #991b1d46;
+
+	--form-border: #ced4da;
+
+	--success-bg: #d1e7dd;
+	--success-text: #0f5132;
+	--success-border: #badbcc;
+
+	--error-bg: #f8d7da;
+	--error-text: #842029;
+	--error-border: #f5c2c7;
+
+	--disabled-bg: #e0e0e0;
+	--disabled-border: #e0e0e0;
+	--disabled-text: #a0a0a0;
+
+	--red-darker-hover: rgb(123, 33, 50);
+
+	--light-gray-bg: #f9fafb;
+	--whatsapp-green: #25d366;
+	--whatsapp-green-hover: #1ebe5a;
+
+	--transparent-gray: rgb(255, 255, 255, 0.2);
+	--transparent-red: #991b1d36;
+
+	--light-gray: #e5e7eb;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
-html,
 body {
-  max-width: 100vw;
-  overflow-x: hidden;
+	font-family: var(--font-karla), sans-serif;
+	margin: 0;
+	padding: 0;
 }
 
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+p,
+h1,
+h2,
+h3,
+h4 {
+	margin: 0;
 }
 
-* {
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
+h2 {
+	font-size: 32px;
+	font-weight: 700;
+	margin: 0;
+	text-align: center;
+	color: var(--black);
+	margin-bottom: 20px;
 }
 
-a {
-  color: inherit;
-  text-decoration: none;
-}
-
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
+h3 {
+	margin-bottom: 10px;
 }

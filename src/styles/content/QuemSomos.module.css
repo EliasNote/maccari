@@ -1,0 +1,222 @@
+.section {
+	width: 100%;
+	max-width: 1280px;
+	margin: 0 auto;
+	background: none;
+	font-family: var(--font-bank-medium-bt), sans-serif;
+	display: flex;
+	flex-direction: column;
+	gap: 60px;
+	padding-block: 60px;
+}
+
+.header {
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+	padding-inline: 10px;
+}
+
+.team {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding-inline: 20px;
+}
+
+.team h3 {
+	font-size: 28px;
+}
+
+.teamGrid {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	gap: 40px;
+}
+
+@media (max-width: 869px) {
+	.teamGrid {
+		grid-template-columns: 1fr;
+	}
+}
+
+.person {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	max-width: 500px;
+	width: 100%;
+	text-align: justify;
+	gap: 20px;
+}
+
+.person div {
+	text-align: center;
+}
+
+.name {
+	font-size: 20px;
+}
+
+.role {
+	color: var(--red);
+	font-weight: bold;
+	font-size: 16px;
+}
+
+.photo {
+	border-radius: 100%;
+}
+
+.enterprise {
+	padding: 20px;
+	display: flex;
+	flex-direction: column;
+	gap: 40px;
+}
+
+.enterpriseGrid {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+	gap: 20px;
+	row-gap: 60px;
+	justify-items: center;
+	align-items: center;
+	padding: 20px;
+}
+
+.enterpriseGrid p {
+	text-align: justify;
+}
+
+@media (max-width: 969px) {
+	.enterpriseGrid {
+		grid-template-columns: 1fr;
+	}
+}
+
+.card {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+	gap: 10px;
+	max-width: 420px;
+	width: 100%;
+
+	color: var(--white);
+	padding: 20px;
+	height: 90%;
+	border-radius: 10px;
+	transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+	transform: scale(1.05);
+}
+
+.card > div {
+	width: 64px;
+	height: 64px;
+	background-color: var(--transparent-gray);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: 100%;
+}
+
+.card > h3 {
+	font-size: 24px;
+}
+
+.icon {
+	width: 32px;
+	height: 32px;
+}
+
+.missao {
+	background-color: var(--red);
+}
+
+.visao {
+	background-color: var(--blue);
+}
+
+.values {
+	background-color: var(--light-gray-bg);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	padding: 20px;
+	gap: 20px;
+	text-align: center;
+	width: calc(100% - 40px);
+	border-radius: 10px;
+}
+
+.values .icon {
+	color: var(--red);
+}
+
+.heartDiv {
+	width: 64px;
+	height: 64px;
+	border-radius: 100%;
+	background-color: var(--transparent-red);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.valuesGrid {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+	gap: 20px;
+	justify-content: center;
+	text-align: left;
+	width: 100%;
+}
+
+.valuesCard {
+	display: flex;
+	gap: 10px;
+	background-color: var(--white);
+	padding: 20px;
+	border-radius: 10px;
+	border: 1px solid var(--light-gray);
+	transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.valuesCard > div:first-child {
+	min-width: 48px;
+	height: 48px;
+	background-color: var(--transparent-red);
+	border-radius: 100%;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.valuesCard .icon {
+	width: 24px;
+}
+
+.valuesCard:hover {
+	transform: translateY(-2px);
+	border-color: --var(--transparent-red);
+	box-shadow: 0 8px 24px var(--shadow-hover);
+	border: 1px solid var(--transparent-red);
+}
+
+.valuesCard:hover .valuesText > h4 {
+	color: var(--red);
+}
+
+.valuesText {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+}

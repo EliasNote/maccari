@@ -1,8 +1,16 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  /* config options here */
-  reactStrictMode: true,
+	reactStrictMode: true,
+
+	async rewrites() {
+		return [
+			{
+				source: "/api/form",
+				destination: "/api/Form",
+			},
+		];
+	},
 };
 
 export default nextConfig;
