@@ -1,7 +1,5 @@
 import type { NextApiRequest, NextApiResponse } from "next";
 import nodemailer from "nodemailer";
-import fs from "fs";
-import path from "path";
 
 type Data = {
 	success: boolean;
