@@ -1,6 +1,4 @@
-import Content from "@/components/content/Content";
-import Footer from "@/components/Footer";
-import Hero from "@/components/Hero";
+import dynamic from "next/dynamic";
 import Head from "next/head";
 
 export default function Home() {
@@ -8,6 +6,12 @@ export default function Home() {
 	const siteDescription =
 		"Especialistas em projetos arquitetônicos, estruturais, elétricos, hidrossanitários, prevenção contra incêndios e consultorias técnicas. Transformamos suas ideias em realidade.";
 	const siteUrl = "https://www.seudominio.com.br";
+
+	const Hero = dynamic(() => import("../components/Hero"), { ssr: false });
+	const Content = dynamic(() => import("../components/content/Content"), {
+		ssr: false,
+	});
+	const Footer = dynamic(() => import("../components/Footer"), { ssr: false });
 
 	return (
 		<>

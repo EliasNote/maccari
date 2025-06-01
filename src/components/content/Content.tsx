@@ -1,10 +1,12 @@
-import Diferenciais from "./Diferenciais";
-import Servicos from "./Servicos";
-import Faq from "./Faq";
-import QuemSomos from "./QuemSomos";
-import Contato from "./Contato";
+import dynamic from "next/dynamic";
 
-const Content = () => {
+const Diferenciais = dynamic(() => import("./Diferenciais"));
+const Servicos = dynamic(() => import("./Servicos"));
+const QuemSomos = dynamic(() => import("./QuemSomos"));
+const Faq = dynamic(() => import("./Faq"));
+const Contato = dynamic(() => import("./Contato"));
+
+export default function Content() {
 	return (
 		<>
 			<Diferenciais />
@@ -14,6 +16,4 @@ const Content = () => {
 			<Contato />
 		</>
 	);
-};
-
-export default Content;
+}

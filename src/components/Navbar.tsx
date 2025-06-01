@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import styles from "@/styles/Navbar.module.css";
 import Image from "next/image";
-import { AnimatePresence, motion, Variants } from "framer-motion";
+import { Variants, motion } from "framer-motion";
 import Topbar from "./Topbar";
 import { scrollTo } from "@/utils/Scroll";
 import { menuIcon } from "@/utils/Icons";
@@ -11,6 +11,15 @@ import {
 	instagramContact,
 	ContactDetail,
 } from "@/utils/Data";
+import dynamic from "next/dynamic";
+
+const AnimatePresence = dynamic(
+	() =>
+		import("framer-motion").then((mod) => ({
+			default: mod.AnimatePresence,
+		})),
+	{ ssr: false }
+);
 
 const underlineVariants: Variants = {
 	rest: { scaleX: 0 },
