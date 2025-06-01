@@ -83,7 +83,7 @@ const Contato = () => {
 		setIsLoading(true);
 
 		try {
-			const response = await fetch("/api/Form", {
+			const response = await fetch("/.netlify/functions/Form", {
 				method: "POST",
 				headers: {
 					"Content-Type": "application/json",
@@ -214,7 +214,7 @@ const Contato = () => {
 									onChange={handleChange}
 									placeholder="(00) 00000-0000"
 									required
-									pattern="^\(?\d{2}\)?[\s-]?\d{4,5}-?\d{4}$"
+									pattern="^\\(?\\d{2}\\)?[\\s-]?\\d{4,5}-?\\d{4}$"
 									maxLength={15}
 									onInvalid={(e) => {
 										const inputElement = e.target as HTMLInputElement;
