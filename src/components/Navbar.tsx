@@ -106,7 +106,6 @@ const Navbar = () => {
 	return (
 		<>
 			<header className={styles.navbar}>
-				{!isMobile && <Topbar />}
 				<Topbar />
 				<nav className={styles.navContainer}>
 					<div className={styles.logo_container}>
