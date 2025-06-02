@@ -52,14 +52,14 @@ const QuemSomos = () => {
 
 	const team = [
 		{
-			photo: "/logo.webp",
+			photo: "/lucas.webp",
 			name: "Lucas Maccari",
 			role: "Engenheiro Civil",
 			description:
 				"Assegura a qualidade, segurança e eficiência em todas as fases dos projetos. Com ampla experiência em projetos complementares, gerenciamento de projetos e sistemas de prevenção, ele conduz cada etapa com precisão e total conformidade às normas técnicas vigentes.",
 		},
 		{
-			photo: "/logo.webp",
+			photo: "/felipe.webp",
 			name: "Felipe Maccari",
 			role: "Arquiteto em Formação",
 			description:
@@ -107,8 +107,8 @@ const QuemSomos = () => {
 							<Image
 								className={styles.photo}
 								src={photo}
-								width={120}
-								height={120}
+								width={500}
+								height={500}
 								priority
 								alt={`${name} photo`}
 							/>

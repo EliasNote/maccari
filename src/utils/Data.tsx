@@ -1,5 +1,5 @@
 import { Mail, MapPin, Clock } from "lucide-react";
-import { whatsappIcon, instagramIcon } from "@/utils/Icons";
+import { whatsappIcon, instagramIcon, facebookIcon } from "@/utils/Icons";
 import { JSX } from "react";
 
 export interface ContactDetail {
@@ -34,6 +34,14 @@ export const instagramContact = (iconClassName: string): ContactDetail => ({
 	title: "Instagram",
 	value: "@maccari_engenhariaearquitetura",
 	href: "https://instagram.com/maccari_engenhariaearquitetura",
+	targetBlank: true,
+});
+
+export const facebookContact = (iconClassName: string): ContactDetail => ({
+	icon: facebookIcon(iconClassName),
+	title: "Facebook",
+	value: "Maccari Engenharia e Arquitetura",
+	href: "https://www.facebook.com/profile.php?id=61577072546098",
 	targetBlank: true,
 });
 

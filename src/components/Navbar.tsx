@@ -10,6 +10,7 @@ import {
 	emailContactWithLink,
 	instagramContact,
 	ContactDetail,
+	facebookContact,
 } from "@/utils/Data";
 import dynamic from "next/dynamic";
 
@@ -101,6 +102,7 @@ const Navbar = () => {
 		emailContactWithLink(styles.sidebarSocialIcon),
 		whatsappContact(styles.sidebarSocialIcon),
 		instagramContact(styles.sidebarSocialIcon),
+		facebookContact(styles.sidebarSocialIcon),
 	];
 
 	return (

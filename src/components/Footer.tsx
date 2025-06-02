@@ -4,6 +4,7 @@ import {
 	instagramContact,
 	whatsappContact,
 	emailContactWithLink,
+	facebookContact,
 } from "@/utils/Data";
 import { scrollTo } from "@/utils/Scroll";
 
@@ -20,6 +21,7 @@ const Footer = () => {
 		emailContactWithLink(styles.infoIcon),
 		whatsappContact(styles.infoIcon),
 		instagramContact(styles.infoIcon),
+		facebookContact(styles.infoIcon),
 	];
 
 	return (

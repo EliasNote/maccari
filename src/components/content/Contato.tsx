@@ -8,6 +8,7 @@ import {
 	locationContact,
 	openingHoursContact,
 	ContactDetail,
+	facebookContact,
 } from "@/utils/Data";
 
 const Contato = () => {
@@ -136,6 +137,7 @@ const Contato = () => {
 		emailContact(styles.infoIcon),
 		whatsappContact(styles.infoIcon),
 		instagramContact(styles.infoIcon),
+		facebookContact(styles.infoIcon),
 		locationContact(styles.infoIcon),
 		openingHoursContact(styles.infoIcon),
 	];

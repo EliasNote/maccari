@@ -67,6 +67,8 @@
 
 .photo {
 	border-radius: 100%;
+	width: 250px;
+	height: 250px;
 }
 
 .enterprise {

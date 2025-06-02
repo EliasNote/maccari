@@ -4,6 +4,7 @@ import {
 	whatsappContact,
 	instagramContact,
 	ContactDetail,
+	facebookContact,
 } from "@/utils/Data";
 
 const Topbar = () => {
@@ -11,6 +12,7 @@ const Topbar = () => {
 		emailContactWithLink(styles.menuImg),
 		whatsappContact(styles.menuImg),
 		instagramContact(styles.menuImg),
+		facebookContact(styles.menuImg),
 	];
 
 	return (
