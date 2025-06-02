@@ -23,7 +23,7 @@
 	background: var(--black);
 	border-inline: 1px solid var(--black);
 	font-family: var(--font-bank-medium-bt), sans-serif;
-	font-size: 13px;
+	font-size: 12px;
 }
 
 .item {
@@ -33,6 +33,12 @@
 	gap: 10px;
 	text-decoration: none;
 	color: inherit;
+}
+
+@media (max-width: 1310px) {
+	.topbar {
+		padding: 0;
+	}
 }
 
 @media (max-width: 1024px) {
