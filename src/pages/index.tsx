@@ -2,7 +2,7 @@ import dynamic from "next/dynamic";
 import Head from "next/head";
 
 export default function Home() {
-	const siteTitle = "Maccari";
+	const siteTitle = "Maccari - Engenharia e Arquitetura";
 	const siteDescription =
 		"Especialistas em projetos arquitetônicos, estruturais, elétricos, hidrossanitários, prevenção contra incêndios e consultorias técnicas. Transformamos suas ideias em realidade.";
 	const siteUrl = "https://www.seudominio.com.br";
