@@ -48,7 +48,7 @@ export const facebookContact = (iconClassName: string): ContactDetail => ({
 export const locationContact = (iconClassName: string): ContactDetail => ({
 	icon: <MapPin size={20} className={iconClassName} />,
 	title: "Localização",
-	value: "Rua José Joaquim Bahls, 1436, Palmas - PR, CEP 85691-226",
+	value: "Rua Júlio Salvador Drusina, S/N, Alto da Glória, Palmas - PR",
 });
 
 export const openingHoursContact = (iconClassName: string): ContactDetail => ({
