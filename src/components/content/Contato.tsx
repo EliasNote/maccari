@@ -65,6 +65,7 @@ const Contato = () => {
 	const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
 		e.preventDefault();
 		setFormStatus(null);
+		setIsLoading(true);
 
 		const phoneDigits = formData.phone.replace(/\D/g, "");
 
@@ -79,8 +80,6 @@ const Contato = () => {
 			setIsLoading(false);
 			return;
 		}
-
-		setIsLoading(true);
 
 		try {
 			const response = await fetch("/api/form", {
@@ -214,7 +213,7 @@ const Contato = () => {
 									onChange={handleChange}
 									placeholder="(00) 00000-0000"
 									required
-									pattern="^[0-9]{2}[ -]?[0-9]{4,5}-[0-9]{4}$"
+									pattern="^\(\d{2}\)\s\d{4,5}-\d{4}$"
 									maxLength={15}
 									onInvalid={(e) => {
 										const inputElement = e.target as HTMLInputElement;
