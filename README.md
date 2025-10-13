@@ -82,7 +82,3 @@ Para obter uma cópia local em funcionamento, siga estes simples passos de exemp
     ```sh
     npm run dev
     ```
-
-## 📄 Licença
-
-Distribuído sob a licença MIT. Veja `LICENSE` para mais informações.
