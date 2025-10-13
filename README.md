@@ -1,40 +1,89 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/pages/api-reference/create-next-app).
 
-## Getting Started
+# Maccari - Landing Page
 
-First, run the development server:
+![Next.js](https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=next.js&logoColor=white)
+![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
+![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white)
+![Vercel](https://img.shields.io/badge/Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white)
+![Netlify](https://img.shields.io/badge/Netlify-00C7B7?style=for-the-badge&logo=netlify&logoColor=white)
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+## 📝 Sobre o Projeto
+
+Este é um projeto freelance para uma empresa de engenharia e arquitetura chamada **Maccari**. O objetivo foi criar uma landing page moderna e profissional para apresentar os serviços e projetos da empresa.
+
+## ✨ Funcionalidades
+
+-   **Design Responsivo:** A landing page é totalmente responsiva e funciona em todos os dispositivos.
+-   **Formulário de Contato:** Um formulário de contato com validação e envio de e-mail usando Nodemailer.
+-   **Seções:** A landing page possui as seguintes seções:
+    -   **Serviços:** Uma lista dos serviços oferecidos pela empresa.
+    -   **Sobre Nós:** Uma breve descrição da empresa.
+    -   **FAQ:** Uma lista de perguntas frequentes.
+    -   **Contato:** Um formulário de contato e outras informações de contato.
+-   **Animações:** Animações suaves usando Framer Motion.
+
+## 🚀 Tecnologias Utilizadas
+
+-   **Next.js:** Um framework React para construir sites renderizados no lado do servidor e estáticos.
+-   **React:** Uma biblioteca JavaScript para construir interfaces de usuário.
+-   **TypeScript:** Um superconjunto tipado de JavaScript que compila para JavaScript puro.
+-   **Framer Motion:** Uma biblioteca para criar animações em React.
+-   **Nodemailer:** Um módulo para aplicativos Node.js que permite o envio de e-mails de forma fácil.
+
+## 📂 Estrutura de Pastas
+
+```
+maccari/
+├── certs/
+│   └── gmail.crt
+├── public/
+│   ├── fonts/
+│   └── icons/
+├── src/
+│   ├── components/
+│   │   ├── content/
+│   │   └── ...
+│   ├── pages/
+│   │   └── api/
+│   ├── styles/
+│   │   └── content/
+│   └── utils/
+├── .gitignore
+├── eslint.config.mjs
+├── netlify.toml
+├── next.config.ts
+├── package-lock.json
+├── package.json
+├── README.md
+└── tsconfig.json
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🏁 Começando
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+Para obter uma cópia local em funcionamento, siga estes simples passos de exemplo.
 
-[API routes](https://nextjs.org/docs/pages/building-your-application/routing/api-routes) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+### Pré-requisitos
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/pages/building-your-application/routing/api-routes) instead of React pages.
+-   npm
+    ```sh
+    npm install npm@latest -g
+    ```
 
-This project uses [`next/font`](https://nextjs.org/docs/pages/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### Instalação
 
-## Learn More
+1.  Clone o repositório
+    ```sh
+    git clone https://github.com/EliasGcf/maccari.git
+    ```
+2.  Instale os pacotes NPM
+    ```sh
+    npm install
+    ```
+3.  Execute o projeto
+    ```sh
+    npm run dev
+    ```
 
-To learn more about Next.js, take a look at the following resources:
+## 📄 Licença
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn-pages-router) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/pages/building-your-application/deploying) for more details.
+Distribuído sob a licença MIT. Veja `LICENSE` para mais informações.
