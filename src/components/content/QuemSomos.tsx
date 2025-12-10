@@ -61,7 +61,7 @@ const QuemSomos = () => {
 		{
 			photo: "/felipe.webp",
 			name: "Felipe Maccari",
-			role: "Arquiteto em Formação",
+			role: "Arquiteto",
 			description:
 				"Contribui com uma visão criativa que alia funcionalidade e estética, trabalhando para transformar espaços em ambientes de conforto e bem-estar. Sempre atento às tendências e às melhores práticas de sustentabilidade, ele traz energia renovada e ideias inovadoras para cada projeto.",
 		},
