@@ -1,6 +1,6 @@
 import { useState, FormEvent } from "react";
 import styles from "@/styles/content/Contato.module.css";
-import { Send } from "lucide-react";
+import { MapPin, Send } from "lucide-react";
 import {
 	emailContact,
 	whatsappContact,
@@ -133,12 +133,21 @@ const Contato = () => {
 		"Outro",
 	];
 
-	const contactDetails: ContactDetail[] = [
+	const contactDetails: (ContactDetail & { hours?: string })[] = [
 		emailContact(styles.infoIcon),
 		whatsappContact(styles.infoIcon),
 		instagramContact(styles.infoIcon),
-		locationContact(styles.infoIcon),
-		openingHoursContact(styles.infoIcon),
+		{
+			...locationContact(styles.infoIcon),
+			title: "Unidade de Palmas",
+			hours: openingHoursContact(styles.infoIcon).value,
+		},
+		{
+			icon: <MapPin size={20} className={styles.infoIcon} />,
+			title: "Unidade de Pato Branco",
+			value: "Rua Alagoas, 200, La Salle, Pato Branco - PR, CEP 85505-260",
+			hours: "Segunda a sexta, das 8h às 17h",
+		},
 	];
 
 	return (
@@ -156,6 +165,7 @@ const Contato = () => {
 									<div className={styles.infoText}>
 										<h4>{item.title}</h4>
 										<p>{item.value}</p>
+										{item.hours && <p>{item.hours}</p>}
 									</div>
 								</>
 							);
